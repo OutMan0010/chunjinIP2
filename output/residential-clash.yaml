@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   server: 162.159.24.131
-  port: 8880
+  port: 2095
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -29,7 +29,7 @@ proxies:
   servername: addons.mozilla.org
   client-fingerprint: random
 - name: 🇺🇸 美国 (United States) 03 (家宽) - xiaohe
-  server: 178.95.170.115
+  server: 178.95.170.98
   port: 2087
   udp: true
   type: vless
@@ -37,17 +37,15 @@ proxies:
   network: ws
   ws-opts:
     path: /4bc027a44532
-    headers:
-      Host: telegram-leviko_v2ray
 - name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   server: 36.224.152.189
   port: 50099
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 - name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
-  server: r3mrcg001286ek2.cybervena.com
+  server: 36.224.174.174
   port: 50099
   udp: true
   type: ss
@@ -60,14 +58,17 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
-- name: 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaohe
-  server: 119.246.1.143
-  port: 443
+- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
+  server: 118.167.209.5
+  port: 24215
   udp: true
-  type: trojan
-  password: BxceQaOe
-  sni: t.me%2fripaojiedian
-  skip-cert-verify: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaohe
   server: 60.248.219.78
   port: 443
@@ -82,31 +83,14 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇰🇷 韩国 (South Korea) 09 (家宽) - xiaohe
-  server: 49.254.204.134
-  port: 1774
+- name: 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - xiaohe
+  server: 119.246.1.143
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇹🇼 中国台湾 (Taiwan) 10 (家宽) - xiaohe
-  server: hinet1.2yly.com
-  port: 24215
-  udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 11 (家宽) - xiaohe
-  server: 211.178.105.134
-  port: 6123
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
+  type: trojan
+  password: BxceQaOe
+  sni: 119.246.1.143
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -118,11 +102,9 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 09 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 10 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 11 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -134,10 +116,8 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 09 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 10 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 11 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

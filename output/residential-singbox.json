@@ -7,7 +7,7 @@
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
       "server": "162.159.24.131",
-      "server_port": 8880,
+      "server_port": 2095,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
@@ -41,15 +41,12 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 03 (家宽) - xiaohe",
-      "server": "178.95.170.115",
+      "server": "178.95.170.98",
       "server_port": 2087,
       "uuid": "bf443e4a-aa9e-4509-abf0-d0f6828d57be",
       "transport": {
         "type": "ws",
-        "path": "/4bc027a44532",
-        "headers": {
-          "Host": "telegram-leviko_v2ray"
-        }
+        "path": "/4bc027a44532"
       }
     },
     {
@@ -58,12 +55,12 @@
       "server": "36.224.152.189",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
-      "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
     },
     {
       "type": "shadowsocks",
       "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe",
-      "server": "r3mrcg001286ek2.cybervena.com",
+      "server": "36.224.174.174",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
       "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
@@ -77,15 +74,23 @@
       "password": "1234!@#$"
     },
     {
-      "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaohe",
-      "server": "119.246.1.143",
-      "server_port": 443,
-      "password": "BxceQaOe",
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe",
+      "server": "118.167.209.5",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
         "enabled": true,
-        "server_name": "t.me%2fripaojiedian",
-        "insecure": true
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
+        }
       }
     },
     {
@@ -108,40 +113,16 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 09 (家宽) - xiaohe",
-      "server": "49.254.204.134",
-      "server_port": 1774,
-      "method": "aes-256-cfb",
-      "password": "1234!@#$"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 10 (家宽) - xiaohe",
-      "server": "hinet1.2yly.com",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "type": "trojan",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 09 (家宽) - xiaohe",
+      "server": "119.246.1.143",
+      "server_port": 443,
+      "password": "BxceQaOe",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
-        }
+        "server_name": "119.246.1.143",
+        "insecure": true
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 11 (家宽) - xiaohe",
-      "server": "211.178.105.134",
-      "server_port": 6123,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
     },
     {
       "type": "selector",
@@ -154,11 +135,9 @@
         "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe",
         "🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaohe",
-        "🇰🇷 韩国 (South Korea) 09 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 10 (家宽) - xiaohe",
-        "🇰🇷 韩国 (South Korea) 11 (家宽) - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 09 (家宽) - xiaohe"
       ]
     },
     {
@@ -171,11 +150,9 @@
         "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe",
         "🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaohe",
-        "🇰🇷 韩国 (South Korea) 09 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 10 (家宽) - xiaohe",
-        "🇰🇷 韩国 (South Korea) 11 (家宽) - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 09 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

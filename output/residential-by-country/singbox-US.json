@@ -7,7 +7,7 @@
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
       "server": "162.159.24.131",
-      "server_port": 8880,
+      "server_port": 2095,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
@@ -41,15 +41,12 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 03 (家宽) - xiaohe",
-      "server": "178.95.170.115",
+      "server": "178.95.170.98",
       "server_port": 2087,
       "uuid": "bf443e4a-aa9e-4509-abf0-d0f6828d57be",
       "transport": {
         "type": "ws",
-        "path": "/4bc027a44532",
-        "headers": {
-          "Host": "telegram-leviko_v2ray"
-        }
+        "path": "/4bc027a44532"
       }
     },
     {
