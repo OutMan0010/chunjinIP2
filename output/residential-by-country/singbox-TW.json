@@ -6,13 +6,17 @@
     {
       "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-      "server": "60.248.219.78",
+      "server": "60.248.219.52",
       "server_port": 443,
-      "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
+      "uuid": "f265b49a-70a3-407a-b17b-e45dfb9f255c",
       "tls": {
         "enabled": true,
         "server_name": "ty986gfazs.cainiaohub.xyz",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
@@ -33,7 +37,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -56,7 +60,6 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/",
         "headers": {
           "Host": "dee2309db4se3g5sds35g4s3dg.oylfmxz.cn"
         }
@@ -75,23 +78,10 @@
         "insecure": false
       },
       "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe",
-      "server": "dee2309db4944c248b6d4372c6641e25.oylfmxz.cn",
-      "server_port": 443,
-      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "dee2309db4944c248b6d4372c6641e25.oylfmxz.cn",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws"
+        "type": "ws",
+        "headers": {
+          "Host": "dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn"
+        }
       }
     },
     {
@@ -102,8 +92,7 @@
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe"
       ]
     },
     {
@@ -113,8 +102,7 @@
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
