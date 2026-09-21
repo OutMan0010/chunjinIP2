@@ -4,15 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
-      "server": "119.246.1.143",
-      "server_port": 443,
-      "password": "BxceQaOe",
-      "tls": {
-        "enabled": true,
-        "server_name": "t.me",
-        "insecure": true
+      "type": "vless",
+      "tag": "🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe",
+      "server": "143.246.219.51",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test"
       }
     },
     {
@@ -20,14 +19,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe"
+        "🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe"
+        "🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
