@@ -10,7 +10,7 @@ proxies:
   udp: true
   type: trojan
   password: BxceQaOe
-  sni: t.me%252fripaojiedian
+  sni: t.me%2fripaojiedian
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
   server: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
