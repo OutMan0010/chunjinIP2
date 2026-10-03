@@ -5,29 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  server: 7cf51189-tmm5c0-tqrqo1-8rja.hk3.hyhuawei.com
+  server: 95358662-tmm5c0-tphvvu-gacy.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
-  sni: 7cf51189-tmm5c0-tqrqo1-8rja.hk3.hyhuawei.com
+  password: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
+  sni: 95358662-tmm5c0-tphvvu-gacy.hk3.hyhuawei.com
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  server: 85715c75-tmm5c0-tncdxq-m0b9.nw4.hyhuawei.com
+  server: 59c70bb8-tmm5c0-txfm0f-1qxa1.nw4.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: bb85e074-b0c2-11ea-ad28-f23c913c8d2b
-  sni: 85715c75-tmm5c0-tncdxq-m0b9.nw4.hyhuawei.com
+  password: f609abb4-ed17-11ee-9fa2-f23c9164ca5d
+  sni: 59c70bb8-tmm5c0-txfm0f-1qxa1.nw4.hyhuawei.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - xiaohe
-  server: zfd-hkv1.kunlun01dns.com
-  port: 16115
-  udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,7 +27,6 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,6 +34,5 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - xiaohe
 rules:
 - MATCH,PROXIES
