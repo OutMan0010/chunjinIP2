@@ -19,7 +19,7 @@ proxies:
     headers:
       Host: ty986gfazs.cainiaohub.xyz
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  server: 104.20.36.205
+  server: 172.66.152.4
   port: 443
   udp: true
   type: vless
