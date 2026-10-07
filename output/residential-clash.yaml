@@ -4,14 +4,39 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  server: 211.178.105.134
-  port: 6123
+- name: 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  server: 104.24.30.89
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  type: vless
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  tls: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - xiaohe
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇹🇭 泰国 (Thailand) 03 (移动家宽) - xiaohe
+  server: 103.86.49.57
+  port: 80
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: aIs.SpEeDtEsT.nEt
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   server: 45.192.201.140
   port: 443
   udp: true
@@ -25,13 +50,7 @@ proxies:
     path: /e8e2cecb6188f7fb
     headers:
       Host: argo6.5671234.xyz
-- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) R50 - xiaohe
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
   server: 60.248.219.78
   port: 443
   udp: true
@@ -45,46 +64,25 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇸🇬 新加坡 (Singapore) 05 (家宽) - xiaohe
-  server: s3.huhiuh.space
-  port: 18642
-  udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇹🇭 泰国 (Thailand) 06 (移动家宽) - xiaohe
-  server: 103.86.49.57
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: aIs.SpEeDtEsT.nEt
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) R50 - xiaohe
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 03 (移动家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - xiaohe
-  - 🇹🇭 泰国 (Thailand) 06 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) R50 - xiaohe
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 03 (移动家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - xiaohe
-  - 🇹🇭 泰国 (Thailand) 06 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
