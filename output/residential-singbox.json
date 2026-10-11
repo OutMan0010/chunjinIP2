@@ -5,7 +5,28 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
+      "tag": "🇳🇱 荷兰 (Netherlands) 01 (移动家宽) - xiaohe",
+      "server": "185.114.48.103",
+      "server_port": 443,
+      "uuid": "616c7b3b-41f4-4038-88c6-d6fedd0ae4a7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nd-3.ardesnode.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs",
+          "short_id": "9ea74b83f4993ca9"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -23,49 +44,59 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 02 (移动家宽) - xiaohe",
-      "server": "188.114.97.6",
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
+      "server": "654168416355441.d6f54hd1j.cc",
       "server_port": 443,
-      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "uuid": "ecdc303d-bcbf-4129-bc02-dd67703f7081",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "v2ray.simspeedup.com",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "654168416355441.d6f54hd1j.cc",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe",
+      "server": "24864168545164.d6f54hd1j.cc",
+      "server_port": 443,
+      "uuid": "ecdc303d-bcbf-4129-bc02-dd67703f7081",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "24864168545164.d6f54hd1j.cc",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/ws",
+        "path": "/",
         "headers": {
-          "Host": "v2ray.simspeedup.com"
+          "Host": "24864168545164.d6f54hd1j.cc"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 03 (移动家宽) - xiaohe",
-      "server": "185.114.48.103",
+      "tag": "🇦🇹 奥地利 (Austria) 05 (家宽) - xiaohe",
+      "server": "at-3.wizard.select",
       "server_port": 443,
-      "uuid": "616c7b3b-41f4-4038-88c6-d6fedd0ae4a7",
+      "uuid": "074b00de-c4d0-11f1-9902-a337233c6cda",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nd-3.ardesnode.ru",
+        "server_name": "at-3.wizard.select",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs",
-          "short_id": "9ea74b83f4993ca9"
+          "public_key": "S9OR9-SQHGl717N9AV_LoouRgSd-M4Yz7os10Mj8XxI",
+          "short_id": "cee953f6"
         }
       }
     },
@@ -74,18 +105,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-        "🇹🇭 泰国 (Thailand) 02 (移动家宽) - xiaohe",
-        "🇳🇱 荷兰 (Netherlands) 03 (移动家宽) - xiaohe"
+        "🇳🇱 荷兰 (Netherlands) 01 (移动家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe",
+        "🇦🇹 奥地利 (Austria) 05 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-        "🇹🇭 泰国 (Thailand) 02 (移动家宽) - xiaohe",
-        "🇳🇱 荷兰 (Netherlands) 03 (移动家宽) - xiaohe"
+        "🇳🇱 荷兰 (Netherlands) 01 (移动家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe",
+        "🇦🇹 奥地利 (Austria) 05 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
