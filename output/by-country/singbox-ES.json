@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 01 (移动家宽) - xiaohe",
-      "server": "185.114.48.103",
+      "tag": "🇪🇸 西班牙 (Spain) 01 - xiaohe",
+      "server": "83.147.18.3",
       "server_port": 443,
-      "uuid": "616c7b3b-41f4-4038-88c6-d6fedd0ae4a7",
+      "uuid": "9f61cdf4-810d-4052-bbc7-2da0c8e20104",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nd-3.ardesnode.ru",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs",
-          "short_id": "9ea74b83f4993ca9"
+          "public_key": "3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA",
+          "short_id": "fd8cf7e1173f0edb"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 荷兰 (Netherlands) 01 (移动家宽) - xiaohe"
+        "🇪🇸 西班牙 (Spain) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 荷兰 (Netherlands) 01 (移动家宽) - xiaohe"
+        "🇪🇸 西班牙 (Spain) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
