@@ -4,7 +4,15 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
+  server: 206.1.102.64
+  port: 8080
+  udp: true
+  type: vmess
+  uuid: 184a0393-5c9e-403c-9be6-427b066308e1
+  alterId: 0
+  cipher: auto
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   server: 60.248.219.78
   port: 443
   udp: true
@@ -18,7 +26,65 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+- name: 🇹🇭 泰国 (Thailand) 03 (移动家宽) - xiaohe
+  server: support.zoom.us.v2ray.simspeedup.com
+  port: 80
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: support.zoom.us.v2ray.simspeedup.com
+- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
+  server: 62.lwdh.us
+  port: 12952
+  udp: true
+  type: vless
+  uuid: d68fbc96-5187-4b8f-965e-eecd7a699e81
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 62.lwdh.us
+  skip-cert-verify: false
+  client-fingerprint: edge
+- name: 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇹🇷 土耳其 (Turkey) 07 (移动家宽) - xiaohe
+  server: tr2.h1cloud.net
+  port: 25375
+  udp: true
+  type: vless
+  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
+  tls: true
+  reality-opts:
+    public-key: PdiXtqIEtNpVRKgB1WCKnmIOC7yJ-VR4uUe1uYjcqXM
+    short-id: 8e2a0cd6de5dc50a
+  servername: www.bing.com
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 05195f917c82
+- name: 🇸🇬 新加坡 (Singapore) 08 (家宽) - xiaohe
+  server: s3.huhiuh.space
+  port: 18642
+  udp: true
+  type: hysteria2
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: s3.huhiuh.space
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - xiaohe
   server: fujrdt.d6f54hd1j.cc
   port: 443
   udp: true
@@ -39,14 +105,28 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇹🇭 泰国 (Thailand) 03 (移动家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 07 (移动家宽) - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 08 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇹🇭 泰国 (Thailand) 03 (移动家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 07 (移动家宽) - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 08 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
