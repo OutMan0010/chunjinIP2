@@ -10,17 +10,34 @@ proxies:
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
+  server: 45.133.151.176
+  port: 25375
+  udp: true
+  type: vless
+  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
+  tls: true
+  reality-opts:
+    public-key: PdiXtqIEtNpVRKgB1WCKnmIOC7yJ-VR4uUe1uYjcqXM
+    short-id: 8e2a0cd6de5dc50a
+  servername: www.bing.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 05195f917c82
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
 rules:
 - MATCH,PROXIES

@@ -6,15 +6,15 @@
     {
       "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe",
-      "server": "211.178.105.134",
-      "server_port": 6123,
+      "server": "49.254.204.134",
+      "server_port": 1774,
       "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
+      "password": "1234!@#$"
     },
     {
       "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe",
-      "server": "p141.panda001.net",
+      "server": "218.237.185.234",
       "server_port": 4652,
       "method": "aes-256-cfb",
       "password": "qwerREWQ@@"
