@@ -4,21 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "172.64.152.23",
-      "server_port": 443,
-      "password": "humanity",
+      "server": "172.67.168.158",
+      "server_port": 2087,
+      "uuid": "1d0e8e53-6999-4752-ac21-c0c54ff5bc09",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": true
+        "server_name": "vn11vina.210z.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/vlessvina",
         "headers": {
-          "Host": "www.calmlunch.com"
+          "Host": "vn11vina.210z.dev"
         }
       }
     },

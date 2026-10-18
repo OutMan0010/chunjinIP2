@@ -25,23 +25,21 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
-  server: vpn.networkforexir.site
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇭 泰国 (Thailand) 04 (移动家宽) - xiaohe
-  server: support.zoom.us.v2ray.simspeedup.com
-  port: 80
+- name: 🇹🇭 泰国 (Thailand) 03 (移动家宽) - xiaohe
+  server: 188.114.98.0
+  port: 443
   udp: true
   type: vless
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  tls: true
+  servername: v2ray.simspeedup.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws
     headers:
-      Host: support.zoom.us.v2ray.simspeedup.com
+      Host: v2ray.simspeedup.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,8 +47,7 @@ proxy-groups:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
-  - 🇹🇭 泰国 (Thailand) 04 (移动家宽) - xiaohe
+  - 🇹🇭 泰国 (Thailand) 03 (移动家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,7 +55,6 @@ proxy-groups:
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
-  - 🇹🇭 泰国 (Thailand) 04 (移动家宽) - xiaohe
+  - 🇹🇭 泰国 (Thailand) 03 (移动家宽) - xiaohe
 rules:
 - MATCH,PROXIES
