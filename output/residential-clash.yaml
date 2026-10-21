@@ -26,7 +26,7 @@ proxies:
     headers:
       Host: ty986gfazs.cainiaohub.xyz
 - name: 🇹🇭 泰国 (Thailand) 03 (移动家宽) - xiaohe
-  server: 103.86.49.57
+  server: v2ray.simspeedup.com
   port: 80
   udp: true
   type: vless
@@ -36,21 +36,17 @@ proxies:
     path: /ws
     headers:
       Host: ais.speedtest.net
-- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
-  server: p141.panda001.net
-  port: 4652
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  server: hinet1.2yly.com
+  port: 24215
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇸🇬 新加坡 (Singapore) 05 (家宽) - xiaohe
-  server: s3.huhiuh.space
-  port: 18642
-  udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: www.bing.com
-  skip-cert-verify: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,8 +55,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇹🇭 泰国 (Thailand) 03 (移动家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,7 +64,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇹🇭 泰国 (Thailand) 03 (移动家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
