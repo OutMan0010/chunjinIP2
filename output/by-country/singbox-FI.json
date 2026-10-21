@@ -12,7 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "fi1.merky.one",
-        "insecure": false,
+        "insecure": true,
         "alpn": [
           "http/1.1"
         ],
@@ -32,21 +32,21 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-      "server": "213.176.92.168",
-      "server_port": 10444,
-      "uuid": "ba52cc43-700d-4040-9444-29214c98e6e0",
+      "server": "webdisk.jaggyslawa.org",
+      "server_port": 443,
+      "uuid": "b62e3646-b84d-443c-9c94-718b646502e0",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "video.yandex.ru",
+        "server_name": "www.foxsports.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
-          "public_key": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
-          "short_id": "8debcf36f1cc69ff"
+          "public_key": "zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s",
+          "short_id": "dda5f542d835"
         }
       }
     },
