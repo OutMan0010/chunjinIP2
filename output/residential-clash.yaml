@@ -4,27 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇮 芬兰 (Finland) 01 (家宽) - xiaohe
-  server: 212.87.222.10
-  port: 8443
+- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  server: 172.66.44.211
+  port: 2083
   udp: true
   type: vless
-  uuid: 8afeb33c-b686-43e9-a629-0d98f991ec28
-  flow: xtls-rprx-vision
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  reality-opts:
-    public-key: f25sygANXTpzdc9YPCwkggwSmm3piA3BluSeHdfG-hg
-  servername: www.nokia.com
-  client-fingerprint: safari
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  server: 211.178.105.134
-  port: 6123
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  server: hinet1.2yly.com
+  servername: wk1.f1w.de5.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wk1.f1w.de5.net
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  server: 61.230.160.34
   port: 24215
   udp: true
   type: vless
@@ -34,7 +30,7 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: ios
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   server: 60.248.219.78
   port: 443
   udp: true
@@ -48,7 +44,7 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   server: 9641684.sdf65h4.top
   port: 443
   udp: true
@@ -62,27 +58,23 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: 9641684.sdf65h4.top
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇫🇮 芬兰 (Finland) 01 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇮 芬兰 (Finland) 01 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
