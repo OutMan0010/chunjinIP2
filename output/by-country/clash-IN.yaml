@@ -13,6 +13,8 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
+    headers:
+      Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 02 - xiaohe
   server: in.smrtai.top
   port: 443
@@ -26,16 +28,13 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 03 - xiaohe
-  server: 152.67.8.205
-  port: 80
+  server: in.tronsg.com
+  port: 443
   udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
+  type: trojan
+  password: Trojan@82164024
+  sni: 127.0.0.1
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
