@@ -4,28 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  server: 211.178.105.134
-  port: 6123
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  server: kw119.zxmm.eu.org
+  port: 20031
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇹🇭 泰国 (Thailand) 02 (移动家宽) - xiaohe
-  server: 104.18.26.90
+  type: trojan
+  password: 00a72bf349e6479b
+  sni: kw119.zxmm.eu.org
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 02 (家宽) - xiaohe
+  server: 122.176.216.52
   port: 443
   udp: true
   type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
   tls: true
-  servername: v2ray.simspeedup.com
+  servername: app-6ada5023.deploy.meerasolution.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /ws
+    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
     headers:
-      Host: v2ray.simspeedup.com
+      Host: app-6ada5023.deploy.meerasolution.com
 - name: 🇸🇬 新加坡 (Singapore) 03 (家宽) - xiaohe
   server: s3.huhiuh.space
   port: 18642
@@ -39,16 +40,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇹🇭 泰国 (Thailand) 02 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇮🇳 印度 (India) 02 (家宽) - xiaohe
   - 🇸🇬 新加坡 (Singapore) 03 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇹🇭 泰国 (Thailand) 02 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇮🇳 印度 (India) 02 (家宽) - xiaohe
   - 🇸🇬 新加坡 (Singapore) 03 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
