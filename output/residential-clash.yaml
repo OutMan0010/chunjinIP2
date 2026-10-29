@@ -11,16 +11,29 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
-- name: 🇹🇭 泰国 (Thailand) 02 (移动家宽) - xiaohe
-  server: support.zoom.us.v2ray.simspeedup.com
-  port: 80
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇹🇭 泰国 (Thailand) 03 (移动家宽) - xiaohe
+  server: 104.18.26.90
+  port: 443
   udp: true
   type: vless
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  tls: true
+  servername: v2ray.simspeedup.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws
-- name: 🇮🇳 印度 (India) 03 (家宽) - xiaohe
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇮🇳 印度 (India) 04 (家宽) - xiaohe
   server: 122.176.216.52
   port: 443
   udp: true
@@ -35,30 +48,23 @@ proxies:
     path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
     headers:
       Host: app-6ada5023.deploy.meerasolution.com
-- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
-  server: p141.panda001.net
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇹🇭 泰国 (Thailand) 02 (移动家宽) - xiaohe
-  - 🇮🇳 印度 (India) 03 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  - 🇹🇭 泰国 (Thailand) 03 (移动家宽) - xiaohe
+  - 🇮🇳 印度 (India) 04 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇹🇭 泰国 (Thailand) 02 (移动家宽) - xiaohe
-  - 🇮🇳 印度 (India) 03 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  - 🇹🇭 泰国 (Thailand) 03 (移动家宽) - xiaohe
+  - 🇮🇳 印度 (India) 04 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
