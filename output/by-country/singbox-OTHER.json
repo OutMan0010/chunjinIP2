@@ -4,25 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
-      "server": "104.18.0.1",
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "104.17.44.17",
       "server_port": 443,
-      "uuid": "3ccba794-1c6d-48a8-acf2-f5caf0e69d86",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "all.speedtest03.ccwu.cc",
+        "server_name": "www.pleadcourt.org",
         "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/assignment",
         "headers": {
-          "Host": "all.speedtest03.ccwu.cc"
+          "Host": "www.pleadcourt.org"
         }
       }
     },
@@ -31,14 +30,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
