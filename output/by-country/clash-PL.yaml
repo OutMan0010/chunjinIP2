@@ -17,19 +17,6 @@ proxies:
   type: vless
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: 177.1.192.38
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 706bce83-91db-4260-b175-cba29145cd56
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: rczv8z0BFqH3QS9PfFAzLYZY8Iao1yEBhwcRskkQugo
-    short-id: b3e515e37815559d
-  servername: upnl.giftsbattle.vip
-  client-fingerprint: ''
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
   server: 177.1.192.67
   port: 443
   udp: true
@@ -42,18 +29,31 @@ proxies:
     short-id: 830e615a39f4c811
   servername: up4.uni-plan.com
   client-fingerprint: ''
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  server: 177.1.192.117
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  server: 31.59.143.147
   port: 443
+  udp: true
+  type: vless
+  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Liu35gmIQJtbul5AeCrceJTjsmln4RaqxX6joKlaBjk
+    short-id: ae97223a8f799889
+  servername: pl2.waspnest.space
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+  server: 177.1.192.38
+  port: 8443
   udp: true
   type: vless
   uuid: 706bce83-91db-4260-b175-cba29145cd56
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: Lt3gSdGmfQMx50yH-OOJaNBSg80vzIveaNVwUUWJwzQ
-    short-id: 3952a220c86628a8
-  servername: up7.uni-plan.com
+    public-key: rczv8z0BFqH3QS9PfFAzLYZY8Iao1yEBhwcRskkQugo
+    short-id: b3e515e37815559d
+  servername: upnl.giftsbattle.vip
   client-fingerprint: ''
 - name: 🇵🇱 波兰 (Poland) 06 - xiaohe
   server: 70.34.252.255
@@ -86,13 +86,43 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇵🇱 波兰 (Poland) 09 - xiaohe
-  server: 92.118.150.146
+  server: 77.232.135.141
+  port: 8445
+  udp: true
+  type: vless
+  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
+  tls: true
+  servername: ru1.radiolumens.uk
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: beru-pl
+- name: 🇵🇱 波兰 (Poland) 10 - xiaohe
+  server: 177.1.192.117
   port: 443
   udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: pl.tronsg.com
-  skip-cert-verify: false
+  type: vless
+  uuid: 706bce83-91db-4260-b175-cba29145cd56
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Lt3gSdGmfQMx50yH-OOJaNBSg80vzIveaNVwUUWJwzQ
+    short-id: 3952a220c86628a8
+  servername: up7.uni-plan.com
+  client-fingerprint: ''
+- name: 🇵🇱 波兰 (Poland) 11 - xiaohe
+  server: 79.182.39.37
+  port: 27591
+  udp: true
+  type: vless
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  tls: true
+  reality-opts:
+    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
+    short-id: 6c5c7900406a1ae7
+  servername: www.samsung.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -107,6 +137,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 07 - xiaohe
   - 🇵🇱 波兰 (Poland) 08 - xiaohe
   - 🇵🇱 波兰 (Poland) 09 - xiaohe
+  - 🇵🇱 波兰 (Poland) 10 - xiaohe
+  - 🇵🇱 波兰 (Poland) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -121,5 +153,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 07 - xiaohe
   - 🇵🇱 波兰 (Poland) 08 - xiaohe
   - 🇵🇱 波兰 (Poland) 09 - xiaohe
+  - 🇵🇱 波兰 (Poland) 10 - xiaohe
+  - 🇵🇱 波兰 (Poland) 11 - xiaohe
 rules:
 - MATCH,PROXIES
