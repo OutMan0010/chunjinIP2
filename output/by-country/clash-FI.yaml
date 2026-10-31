@@ -16,18 +16,19 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: webdisk.jaggyslawa.org
-  port: 443
+  server: 65.109.210.221
+  port: 465
   udp: true
   type: vless
-  uuid: b62e3646-b84d-443c-9c94-718b646502e0
-  flow: xtls-rprx-vision
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   tls: true
-  reality-opts:
-    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
-    short-id: dda5f542d835
-  servername: www.foxsports.com
-  client-fingerprint: edge
+  servername: hw3.divarkhaghazi.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
 proxy-groups:
 - name: PROXIES
   type: select
