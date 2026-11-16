@@ -4,21 +4,20 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  server: 49.254.204.133
-  port: 1774
+- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  server: 69.17.3.150
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  server: 211.178.105.134
-  port: 6123
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇩🇪 德国 (Germany) 03 (移动家宽) - xiaohe
+  type: vless
+  uuid: 140d6fc9-2c6d-41bd-a487-182b52c0184f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zUbdpLqoZN7kSFDrHgGnAcZqJzKilme_rIJwI3FPGCA
+    short-id: d898752d58acbfe0
+  servername: caissuers.microsoft.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 02 (移动家宽) - xiaohe
   server: 47.254.169.3
   port: 443
   udp: true
@@ -30,16 +29,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  - 🇩🇪 德国 (Germany) 03 (移动家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇩🇪 德国 (Germany) 02 (移动家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  - 🇩🇪 德国 (Germany) 03 (移动家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇩🇪 德国 (Germany) 02 (移动家宽) - xiaohe
 rules:
 - MATCH,PROXIES
