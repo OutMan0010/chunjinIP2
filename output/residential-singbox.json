@@ -27,10 +27,18 @@
     {
       "type": "shadowsocks",
       "tag": "🇩🇪 德国 (Germany) 02 (移动家宽) - xiaohe",
-      "server": "47.254.169.3",
+      "server": "47.85.201.22",
       "server_port": 443,
       "method": "2022-blake3-chacha20-poly1305",
-      "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
+      "password": "3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
     },
     {
       "type": "selector",
@@ -38,7 +46,8 @@
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
-        "🇩🇪 德国 (Germany) 02 (移动家宽) - xiaohe"
+        "🇩🇪 德国 (Germany) 02 (移动家宽) - xiaohe",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe"
       ]
     },
     {
@@ -46,7 +55,8 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
-        "🇩🇪 德国 (Germany) 02 (移动家宽) - xiaohe"
+        "🇩🇪 德国 (Germany) 02 (移动家宽) - xiaohe",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
