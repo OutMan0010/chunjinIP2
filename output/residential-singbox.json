@@ -4,59 +4,113 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
-      "server": "69.17.3.150",
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 01 (移动家宽) - xiaohe",
+      "server": "47.254.169.3",
       "server_port": 443,
-      "uuid": "140d6fc9-2c6d-41bd-a487-182b52c0184f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "caissuers.microsoft.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zUbdpLqoZN7kSFDrHgGnAcZqJzKilme_rIJwI3FPGCA",
-          "short_id": "d898752d58acbfe0"
-        }
-      }
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
     },
     {
       "type": "shadowsocks",
       "tag": "🇩🇪 德国 (Germany) 02 (移动家宽) - xiaohe",
-      "server": "47.85.201.22",
+      "server": "47.254.175.2",
       "server_port": 443,
       "method": "2022-blake3-chacha20-poly1305",
-      "password": "3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA="
+      "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
     },
     {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe",
+      "tag": "🇩🇪 德国 (Germany) 03 (移动家宽) - xiaohe",
+      "server": "8.220.81.25",
+      "server_port": 443,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe",
+      "server": "211.178.105.134",
+      "server_port": 6123,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe",
       "server": "49.254.204.133",
       "server_port": 1774,
       "method": "aes-256-cfb",
       "password": "1234!@#$"
     },
     {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe",
+      "server": "9e5f5c4b-tomdc0-tpolhi-1rgxu.hk2.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "ea93064c-176c-11f0-885d-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "download.windowsupdate.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 07 (家宽) - xiaohe",
+      "server": "104.234.239.139",
+      "server_port": 443,
+      "uuid": "70756c73-0000-4000-8000-650000000000",
+      "tls": {
+        "enabled": true,
+        "server_name": "parsa-panel-u48we.wotic15356.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/pulse",
+        "headers": {
+          "Host": "parsa-panel-u48we.wotic15356.workers.dev"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
+        "🇩🇪 德国 (Germany) 01 (移动家宽) - xiaohe",
         "🇩🇪 德国 (Germany) 02 (移动家宽) - xiaohe",
-        "🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe"
+        "🇩🇪 德国 (Germany) 03 (移动家宽) - xiaohe",
+        "🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe",
+        "🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe",
+        "🇺🇸 美国 (United States) 07 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
+        "🇩🇪 德国 (Germany) 01 (移动家宽) - xiaohe",
         "🇩🇪 德国 (Germany) 02 (移动家宽) - xiaohe",
-        "🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe"
+        "🇩🇪 德国 (Germany) 03 (移动家宽) - xiaohe",
+        "🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe",
+        "🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe",
+        "🇺🇸 美国 (United States) 07 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

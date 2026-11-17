@@ -5,18 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 69.17.3.150
+  server: 104.234.239.139
   port: 443
   udp: true
   type: vless
-  uuid: 140d6fc9-2c6d-41bd-a487-182b52c0184f
-  flow: xtls-rprx-vision
+  uuid: 70756c73-0000-4000-8000-650000000000
   tls: true
-  reality-opts:
-    public-key: zUbdpLqoZN7kSFDrHgGnAcZqJzKilme_rIJwI3FPGCA
-    short-id: d898752d58acbfe0
-  servername: caissuers.microsoft.com
+  servername: parsa-panel-u48we.wotic15356.workers.dev
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /pulse
+    headers:
+      Host: parsa-panel-u48we.wotic15356.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

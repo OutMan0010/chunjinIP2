@@ -6,21 +6,23 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
-      "server": "69.17.3.150",
+      "server": "104.234.239.139",
       "server_port": 443,
-      "uuid": "140d6fc9-2c6d-41bd-a487-182b52c0184f",
-      "flow": "xtls-rprx-vision",
+      "uuid": "70756c73-0000-4000-8000-650000000000",
       "tls": {
         "enabled": true,
-        "server_name": "caissuers.microsoft.com",
+        "server_name": "parsa-panel-u48we.wotic15356.workers.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zUbdpLqoZN7kSFDrHgGnAcZqJzKilme_rIJwI3FPGCA",
-          "short_id": "d898752d58acbfe0"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/pulse",
+        "headers": {
+          "Host": "parsa-panel-u48we.wotic15356.workers.dev"
         }
       }
     },
