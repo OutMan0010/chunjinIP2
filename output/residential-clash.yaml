@@ -4,21 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪 德国 (Germany) 01 (移动家宽) - xiaohe
-  server: 3.10.140.166
-  port: 443
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Cg2Dw4OhdBZhqbeO9ZTA3g/Gk/AvsrYZGhAJeGnQIx4=
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  server: 211.178.105.134
-  port: 6123
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   server: 60.248.219.78
   port: 443
   udp: true
@@ -32,14 +18,7 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇩🇪 德国 (Germany) 05 (移动家宽) - xiaohe
+- name: 🇩🇪 德国 (Germany) 02 (移动家宽) - xiaohe
   server: 47.254.143.251
   port: 443
   udp: true
@@ -51,20 +30,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇩🇪 德国 (Germany) 01 (移动家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
-  - 🇩🇪 德国 (Germany) 05 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇩🇪 德国 (Germany) 02 (移动家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 (Germany) 01 (移动家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
-  - 🇩🇪 德国 (Germany) 05 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇩🇪 德国 (Germany) 02 (移动家宽) - xiaohe
 rules:
 - MATCH,PROXIES
